@@ -302,6 +302,7 @@ Once Taco ends up with a single proof representing a specified amount of transac
 To reduce the time required for generating proofs for a large number (N) of transactions from O(N) to nearly O(log N), Taco can use a technique similar to [SIMD (Single Instruction, Multiple Data)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instructions used in CPUs. This approach allows performing the same operation on a vector of items simultaneously.
 
 Taco can have proof generator functions such as `transferX1`, `transferX2`, `transferX4`, `transferX8`, `transferX16`, etc., as many as the complexity of the zk circuit allows. By processing transactions in batches, Taco achieves faster proof generation.
+
 **SIMD-Like Functions For Proof Generation**
 
 ![](/assets/functions.png)
